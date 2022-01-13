@@ -5,8 +5,7 @@
 
 This project was built to setup react for my projects
 
-![screenshot](/src/assets/compiled.PNG)
-![screenshot](/src/assets/reactDEMO.PNG)
+![screenshot](./assets/calculator.PNG)
 
 # Built With
 
