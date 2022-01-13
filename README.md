@@ -5,7 +5,7 @@
 
 This project was built to setup react for my projects
 
-![screenshot](./assets/calculator.PNG)
+![](/src/assets/calculator.PNG)
 
 # Built With
 
