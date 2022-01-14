@@ -8,12 +8,12 @@ class Calculator extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(e){
+  handleClick(e) {
     this.setState((state) => calculate(state, e.target.textContent));
   }
 
   render() {
-    const {next, total} = this.state;
+    const { next, total } = this.state;
     return (
       <div className="container">
         <div className="calc-display">{next || total || 0}</div>
