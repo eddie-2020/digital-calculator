@@ -1,4 +1,4 @@
-# Maths-Magician
+Hi # Maths-Magician
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Additional description about the project and its features.
@@ -6,7 +6,7 @@
 This project was built to setup react for my projects
 
 ![](/src/assets/calculator.PNG)
-![](/src/assets/Multiply.PNG)
+![](/src/assets/Addition.PNG)
 
 # Built With
 
@@ -14,6 +14,12 @@ This project was built to setup react for my projects
 2. Linters (Stylelint, Lighthouse).
 
 # Getting Started
+
+# Installation
+1. You can run: `npm install create-react-app` (to create a new react app) 
+2. After the installation of the react app you can run: `npm start` (to load it on the server)
+3. Before you run test you first have to install `jest`in order to run test you can as well add `--coverage`to the script array in your package.json
+4. Then after the previewing in locally you can now run : `npm test` (to see if the code works perfectly.
 
 To get a local copy up and running follow these simple example steps.
 
