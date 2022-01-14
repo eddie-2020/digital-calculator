@@ -19,12 +19,13 @@
 }
 
 .btn-zero {
-  grid-column: 1 /span 2;
+  grid-column: 1 /span 5;
 }
 
 button {
   border: none;
   padding: 12px;
+  text-align: center;
   font-size: 15px;
   font-weight: 700;
   cursor: pointer;

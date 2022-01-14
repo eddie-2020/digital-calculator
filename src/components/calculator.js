@@ -17,7 +17,7 @@ const Calculator = () => {
   };
 
   const { next, total } = calcObject;
-  const btnClass = (i) => ((((i + 1) % 4 === 0) || i === 18) ? 'orange-like-btn' : 'gray-like-btn');
+  const btnClass = (i) => ((((i + 1) % 4 === 0) || i === 20) ? 'orange-like-btn' : 'gray-like-btn');
 
   return (
     <div className="container">
