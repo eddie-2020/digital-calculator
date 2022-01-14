@@ -1,44 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate';
+import btnValues from './btnNames';
+import '../App.css';
 
-class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-    this.handleClick = this.handleClick.bind(this);
-  }
+const Calculator = () => {
+  const [calcObject, setCalcObject] = useState({});
 
-  handleClick(e) {
-    this.setState((state) => calculate(state, e.target.textContent));
-  }
+  const handleClick = (e) => {
+    e.preventDefault();
+    try {
+      setCalcObject({ ...calcObject, ...calculate(calcObject, e.target.textContent) });
+    } catch (error) {
+      return calcObject;
+    }
+    return 0;
+  };
 
-  render() {
-    const { next, total } = this.state;
-    return (
-      <div className="container">
-        <div className="calc-display">{next || total || 0}</div>
-        <button type="button" onClick={this.handleClick} className="gray-like-btn">AC</button>
-        <button type="button" onClick={this.handleClick} className="gray-like-btn">+/-</button>
-        <button type="button" onClick={this.handleClick} className="gray-like-btn">%</button>
-        <button type="button" onClick={this.handleClick} className="orange-like-btn">÷</button>
-        <button type="button" onClick={this.handleClick} className="gray-like-btn">7</button>
-        <button type="button" onClick={this.handleClick} className="gray-like-btn">8</button>
-        <button type="button" onClick={this.handleClick} className="gray-like-btn">9</button>
-        <button type="button" onClick={this.handleClick} className="orange-like-btn">x</button>
-        <button type="button" onClick={this.handleClick} className="gray-like-btn">4</button>
-        <button type="button" onClick={this.handleClick} className="gray-like-btn">5</button>
-        <button type="button" onClick={this.handleClick} className="gray-like-btn">6</button>
-        <button type="button" onClick={this.handleClick} className="orange-like-btn">-</button>
-        <button type="button" onClick={this.handleClick} className="gray-like-btn">1</button>
-        <button type="button" onClick={this.handleClick} className="gray-like-btn">2</button>
-        <button type="button" onClick={this.handleClick} className="gray-like-btn">3</button>
-        <button type="button" onClick={this.handleClick} className="orange-like-btn">+</button>
-        <button type="button" onClick={this.handleClick} className="gray-like-btn btn-zero">0</button>
-        <button type="button" onClick={this.handleClick} className="gray-like-btn">.</button>
-        <button type="button" onClick={this.handleClick} className="orange-like-btn">=</button>
-      </div>
-    );
-  }
-}
+  const { next, total } = calcObject;
+  const btnClass = (i) => ((((i + 1) % 4 === 0) || i === 18) ? 'orange-like-btn' : 'gray-like-btn');
+
+  return (
+    <div className="container">
+      <div className="calc-display">{next || total || 0}</div>
+      {btnValues.map((name, i) => (
+        <button key={i.toString()} type="button" onClick={handleClick} className={btnClass(i)}>
+          {name}
+        </button>
+      ))}
+    </div>
+  );
+};
 
 export default Calculator;
