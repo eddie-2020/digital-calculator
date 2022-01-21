@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import calculate from '../logic/calculate';
-import btnValues from './btnNames';
 import '../App.css';
+import React, { useState } from 'react';
+import btnValues from './btnNames';
+import calculate from '../logic/calculatorNav';
 
-const Calculator = () => {
+const Calculating = () => {
   const [calcObject, setCalcObject] = useState({});
 
   const handleClick = (e) => {
@@ -31,4 +31,4 @@ const Calculator = () => {
   );
 };
 
-export default Calculator;
+export default Calculating;

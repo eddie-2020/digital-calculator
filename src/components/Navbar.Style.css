@@ -1,0 +1,63 @@
+.header-container {
+  height: 5rem;
+  background-color: #d3d3d3;
+  padding: 0 10%;
+  color: #000;
+}
+
+.header-container nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-container ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-container li {
+  margin: 2px;
+  color: #000;
+  text-align: center;
+}
+
+.header-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.header-container a.active {
+  color: #efefef;
+  background-color: #6c757d;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+.header-container a:hover {
+  color: #efefef;
+  background-color: #007bff;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+.quotations {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+  font-family: sans-serif;
+  line-height: 30px;
+}
+
+.logo-container {
+  background-image: url(./assets/icons8-estimate-48.png);
+  background-position: center;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}

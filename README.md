@@ -1,17 +1,18 @@
-Hi # Maths-Magician
+# Maths-Magician
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Additional description about the project and its features.
 
 This project was built to setup react for my projects
 
-![](/src/assets/calculator.PNG)
-![](/src/assets/Addition.PNG)
+![](/src/components/assets/navHome.PNG)
+![](/src/components/assets/navCalc.PNG)
+![](/src/components/assets/navQuotes.PNG)
 
 # Built With
 
 1. React.js
-2. Linters (Stylelint, Lighthouse).
+2. Linters (Stylelint, Lighthouse).s
 
 # Getting Started
 
@@ -23,7 +24,7 @@ This project was built to setup react for my projects
 
 To get a local copy up and running follow these simple example steps.
 
-Prerequisites
+# Prerequisites
 
 Setup: Clone https://github.com/oluyaratosin123/maths-magician.git into the destination folder of your local machine.
 Install: Install linters with the npx commands given in the linters.yml file.
