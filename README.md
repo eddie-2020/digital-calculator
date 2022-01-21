@@ -5,13 +5,14 @@ Hi # Maths-Magician
 
 This project was built to setup react for my projects
 
-![](/src/assets/calculator.PNG)
-![](/src/assets/Addition.PNG)
+![](/src/components/assets/navHome.PNG)
+![](/src/components/assets/navCalc.PNG)
+![](/src/components/assets/navQuotes.PNG)
 
 # Built With
 
 1. React.js
-2. Linters (Stylelint, Lighthouse).
+2. Linters (Stylelint, Lighthouse).s
 
 # Getting Started
 
