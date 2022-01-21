@@ -1,7 +1,6 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
-import Big from 'big.js';
+import Big from 'big.js/big';
 
-function operate(numberOne, numberTwo, operation) {
+export default function operate(numberOne, numberTwo, operation) {
   const one = Big(numberOne);
   const two = Big(numberTwo);
   if (operation === '+') {
@@ -29,4 +28,3 @@ function operate(numberOne, numberTwo, operation) {
   }
   throw Error(`Unknown operation '${operation}'`);
 }
-export default operate;
