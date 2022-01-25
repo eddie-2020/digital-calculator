@@ -12,7 +12,7 @@ This project was built to setup react for my projects
 # Built With
 
 1. React.js
-2. Linters (Stylelint, Lighthouse).s
+2. Linters (Stylelint, Lighthouse)
 
 # Getting Started
 
