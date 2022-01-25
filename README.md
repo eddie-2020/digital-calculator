@@ -16,7 +16,7 @@ This project was built to setup react for my projects
 
 # Getting Started
 
-# Installation
+## Installation
 1. You can run: `npm install create-react-app` (to create a new react app) 
 2. After the installation of the react app you can run: `npm start` (to load it on the server)
 3. Before you run test you first have to install `jest`in order to run test you can as well add `--coverage`to the script array in your package.json
